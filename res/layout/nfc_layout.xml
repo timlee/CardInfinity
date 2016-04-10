@@ -1,0 +1,442 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cardinfinity.NFCCardInfoActivity" >
+
+    <ScrollView
+        android:id="@+id/NFCCardInfo_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/NFCCardInfo_MainContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:id="@+id/NFCCardInfo_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/NFCCardInfo_TitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="請將手機靠在一起，並輕碰螢幕傳輸!!"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/red" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/NFCCardInfo_CardImageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/addbusinesscard_radius_shape"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/NFCCardInfo_CardImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/man" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/NFCCardInfo_NameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/addbusinesscard_radius_shape"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/NFCCardInfo_NameTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="姓名 : "
+                    android:textColor="#00c853"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/NFCCardInfo_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Testing"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/NFCCardInfo_EmailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/addbusinesscard_radius_shape"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/NFCCardInfo_EmailTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="E-Mail"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#00c853"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/NFCCardInfo_EmailContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/NFCCardInfo_EmailPersonLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp" >
+
+                        <TextView
+                            android:id="@+id/NFCCardInfo_EmailPerson"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="lsc830621@gmail.com"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/NFCCardInfo_PhoneLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/addbusinesscard_radius_shape"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/NFCCardInfo_PhoneTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="電話"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#00c853"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/NFCCardInfo_PhoneContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/NFCCardInfo_TelLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp" >
+
+                        <TextView
+                            android:id="@+id/NFCCardInfo_TelTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="住家 : "
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/NFCCardInfo_Tel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="03-3010056"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right" >
+
+                            <ImageView
+                                android:id="@+id/NFCCardInfo_TelImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/callphone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/NFCCardInfo_MobileLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp" >
+
+                        <TextView
+                            android:id="@+id/NFCCardInfo_MobileTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="行動 : "
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/NFCCardInfo_Mobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0928431981"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right" >
+
+                            <ImageView
+                                android:id="@+id/NFCCardInfo_MobileImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/callphone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/NFCCardInfo_FaxLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp" >
+
+                        <TextView
+                            android:id="@+id/NFCCardInfo_FaxTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="傳真 : "
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/NFCCardInfo_Fax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0928431981"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/NFCCardInfo_CompanyContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/addbusinesscard_radius_shape"
+                android:orientation="vertical"
+                android:padding="5dp" >
+                
+                  <TextView
+                    android:id="@+id/NFCCardInfo_CompanyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="公司"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#00c853"
+                    android:textSize="20sp" />
+                
+
+                <LinearLayout
+                    android:id="@+id/NFCCardInfo_CompanyNameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp" >
+
+                    <TextView
+                        android:id="@+id/NFCCardInfo_CompanyDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公司 : "
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/NFCCardInfo_Company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="國立高雄師範大學軟體工程學系"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/NFCCardInfo_CompanyDepartmentLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp" >
+
+                    <TextView
+                        android:id="@+id/NFCCardInfo_DepartmentDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="部門 : "
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/NFCCardInfo_Department"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="文廷實驗室"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/NFCCardInfo_JobLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp" >
+
+                    <TextView
+                        android:id="@+id/NFCCardInfo_JobTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="職位 : "
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/NFCCardInfo_Job"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="專題學生"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/NFCCardInfo_AddressLayout"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/addbusinesscard_radius_shape"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/NFCCardInfo_AddressTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="地址"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#00c853"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/NFCCardInfo_AddressContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/NFCCardInfo_AddressNameLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp" >
+
+                        <TextView
+                            android:id="@+id/NFCCardInfo_Address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="桃園市寶慶路388號11樓之2"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/NFCCardInfo_URLLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/addbusinesscard_radius_shape"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/NFCCardInfo_URLTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="個人網站"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#00c853"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/NFCCardInfo_URLContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp" >
+
+                    <TextView
+                        android:id="@+id/NFCCardInfo_URL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="www.nknu.edu.tw"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right" >
+
+                        <ImageView
+                            android:id="@+id/NFCCardInfo_WebImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/web" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

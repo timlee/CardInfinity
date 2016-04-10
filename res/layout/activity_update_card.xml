@@ -1,0 +1,440 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.cardinfinity.updateCardActivity" >
+
+    <RelativeLayout
+        android:id="@+id/UpdateCard_Interpretor"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#eeeeee"
+        android:padding="10dp" >
+
+        <ScrollView
+            android:id="@+id/UpdateCard_ScrollLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/UpdateCard_Content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/UpdateCard_NameAndPhotoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/addbusinesscard_radius_shape"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/UpdateCard_Photo"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:src="@drawable/smile" />
+
+                    <LinearLayout
+                        android:id="@+id/UpdateCard_NameLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" >
+
+                        <EditText
+                            android:id="@+id/UpdateCard_NameText"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_bottom_line"
+                            android:ems="10"
+                            android:hint="名字"
+                            android:padding="10dp"
+                            android:textSize="24sp" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/UpdateCard_TelLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/addbusinesscard_radius_shape"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/UpdateCard_TelTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="電話"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#00c853"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:id="@+id/UpdateCard_Tel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/UpdateCard_MobileLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp" >
+
+                            <TextView
+                                android:id="@+id/UpdateCard_MobileTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="行動電話"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <EditText
+                                android:id="@+id/UpdateCard_MobileText"
+                                android:layout_width="158dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/edittext_bottom_line"
+                                android:ems="10"
+                                android:hint="mobile"
+                                android:inputType="phone"
+                                android:padding="10dp"
+                                android:textSize="15sp" >
+                            </EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/UpdateCard_WorkPhoneLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp" >
+
+                            <TextView
+                                android:id="@+id/UpdateCard_WorkPhoneTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="公司電話"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <EditText
+                                android:id="@+id/UpdateCard_WorkPhoneText"
+                                android:layout_width="158dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/edittext_bottom_line"
+                                android:ems="10"
+                                android:hint="office tel"
+                                android:inputType="phone"
+                                android:padding="10dp"
+                                android:textSize="15sp" >
+                            </EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/UpdateCard_FaxLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp" >
+
+                            <TextView
+                                android:id="@+id/UpdateCard_FaxTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="傳真電話"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <EditText
+                                android:id="@+id/UpdateCard_FaxText"
+                                android:layout_width="158dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/edittext_bottom_line"
+                                android:ems="10"
+                                android:hint="office tel"
+                                android:inputType="phone"
+                                android:padding="10dp"
+                                android:textSize="15sp" >
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/UpdateCard_EmailLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/addbusinesscard_radius_shape"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/UpdateCard_EmailTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="E-Mail"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#00c853"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:id="@+id/UpdateCard_Email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/UpdateCard_EmailPersonLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp" >
+
+                            <TextView
+                                android:id="@+id/UpdateCard_EmailPersonTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="個人信箱"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <EditText
+                                android:id="@+id/UpdateCard_EmailPersonText"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/edittext_bottom_line"
+                                android:ems="10"
+                                android:hint="personal email"
+                                android:padding="10dp"
+                                android:textSize="15sp" >
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/UpdateCard_AddressLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/addbusinesscard_radius_shape"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/UpdateCard_AddressTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="地址"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#00c853"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:id="@+id/UpdateCard_Address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/UpdateCard_HomeAddressLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp" >
+
+                            <TextView
+                                android:id="@+id/UpdateCard_HomeAddressTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="地址"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <EditText
+                                android:id="@+id/UpdateCard_AddressText"
+                                android:layout_width="158dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/edittext_bottom_line"
+                                android:ems="10"
+                                android:hint="地址"
+                                android:padding="10dp"
+                                android:textSize="15sp" >
+                            </EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/UpdateCard_Url"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp" >
+
+                            <TextView
+                                android:id="@+id/UpdateCard_UrlTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="個人網址"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <EditText
+                                android:id="@+id/UpdateCard_UrlText"
+                                android:layout_width="158dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/edittext_bottom_line"
+                                android:ems="10"
+                                android:hint="personal url"
+                                android:padding="10dp"
+                                android:textSize="15sp" >
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/UpdateCard_OrganizationLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/addbusinesscard_radius_shape"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/UpdateCard_OrganizationTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="公司"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#00c853"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:id="@+id/UpdateCard_Organize"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/UpdateCard_OrganizeLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp" >
+
+                            <LinearLayout
+                                android:id="@+id/UpdateCard_OrganizeEditTextContainer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:id="@+id/UpdateCard_Container_Org"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp" >
+
+                                    <TextView
+                                        android:id="@+id/UpdateCard_OrganizeNameTitle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="公司"
+                                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                                    <EditText
+                                        android:id="@+id/UpdateCard_OrganizeNameText"
+                                        android:layout_width="158dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:background="@drawable/edittext_bottom_line"
+                                        android:ems="10"
+                                        android:hint="公司"
+                                        android:padding="10dp"
+                                        android:textSize="15sp" >
+
+                                    </EditText>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/UpdateCard_Container_Dep"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp" >
+                                    
+                                    <TextView
+                                        android:id="@+id/UpdateCard_OrganizeDepartmentTitle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="部門"
+                                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                                    <EditText
+                                        android:id="@+id/UpdateCard_OrganizeDepartmentText"
+                                        android:layout_width="158dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:background="@drawable/edittext_bottom_line"
+                                        android:ems="10"
+                                        android:hint="部門"
+                                        android:padding="10dp"
+                                        android:textSize="15sp" >
+
+                                    </EditText>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/UpdateCard_Container_Job"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp" >
+                                    
+                                    <TextView
+                                        android:id="@+id/UpdateCard_OrganizeJobTitleTitle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="職稱"
+                                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                                    <EditText
+                                        android:id="@+id/UpdateCard_OrganizeJobTitleText"
+                                        android:layout_width="158dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:background="@drawable/edittext_bottom_line"
+                                        android:ems="10"
+                                        android:hint="職稱"
+                                        android:padding="10dp"
+                                        android:textSize="15sp" >
+
+                                    </EditText>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

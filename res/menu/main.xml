@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.cardinfinity.MainActivity" >
+
+    <item
+        android:id="@+id/logOut"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+     	android:icon="@drawable/ic_settings_white_36dp"
+        android:title="登出"/>
+ 
+
+</menu>

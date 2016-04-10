@@ -1,0 +1,339 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cardinfinity.RegisterActivity" >
+
+    <RelativeLayout
+        android:id="@+id/Register_layoutInterpretor"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+		android:focusable="true"
+		android:focusableInTouchMode="true" >
+
+        <ScrollView
+            android:id="@+id/Register_Content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="15dp" >
+
+            <LinearLayout
+                android:id="@+id/Register_ContentChild"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/Register_TitleLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/Register_Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="請輸入以下資料以完成註冊"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/Register_Hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="*符號為必要欄位"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#d50000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Register_Account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/AccountTitleContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#d50000" />
+
+                        <TextView
+                            android:id="@+id/RegisterAccount_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="帳號:"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/RegisterAccount_Message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#69f0ae" />
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/Register_AccountText"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/rect_edit_text"
+                        android:ems="10"
+                        android:padding="5dp" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Register_Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <GridLayout
+                        android:id="@+id/PasswordTitleContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#d50000" />
+
+                        <TextView
+                            android:id="@+id/RegisterPassword_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="密碼:"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/RegisterPassword_Message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="還能輸入8個字母"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#69f0ae" />
+                    </GridLayout>
+
+                    <EditText
+                        android:id="@+id/Register_PasswordText"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/rect_edit_text"
+                        android:inputType="textPassword"
+                        android:ems="10"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Register_RePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/RePasswordTitleContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#d50000" />
+
+                        <TextView
+                            android:id="@+id/RegisterRePassword_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="重新輸入密碼:"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/RegisterRePassword_Message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="還能輸入8個字母"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#69f0ae" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/Register_RePasswordText"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/rect_edit_text"
+                        android:inputType="textPassword"
+                        android:ems="10"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Register_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/NameTitleContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#d50000" />
+
+                        <TextView
+                            android:id="@+id/RegisterName_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="姓名:"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/RegisterName_Message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#69f0ae" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/Register_NameText"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/rect_edit_text"
+                        android:ems="10"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Register_Age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/AgeTitleContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#d50000" />
+
+                        <TextView
+                            android:id="@+id/RegisterAge_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="出生年月日: -- ex : 1234/06/21"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/RegisterAge_Message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#69f0ae" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/Register_AgeText"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/rect_edit_text"
+                        android:ems="10"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+                
+
+             
+
+                <LinearLayout
+                    android:id="@+id/Register_EMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/EMailTitleContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#d50000" />
+
+                        <TextView
+                            android:id="@+id/RegisterEMail_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="電子郵件E-Mail:"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/RegisterEMail_Message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#69f0ae" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/Register_EmailText"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/rect_edit_text"
+                        android:ems="10"
+                        android:padding="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.cardinfinity.UpdateOtherCardActivity" >
+
+ 		<item android:id="@+id/updateOtherCard_complete"
+		android:title="123"
+		android:icon="@drawable/ic_check_white_24dp"
+		android:showAsAction="always|withText" />
+</menu>

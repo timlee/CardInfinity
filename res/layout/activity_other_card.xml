@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cardinfinity.OtherCardActivity" >
+
+
+        <LinearLayout
+            android:id="@+id/OtherCardInfo_MainContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:id="@+id/OtherCardInfo_CardImageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/addbusinesscard_radius_shape"
+                android:orientation="vertical"
+                android:padding="20dp" >
+
+                <ImageView
+                    android:id="@+id/OtherCardInfo_CardImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/man" />
+
+                <LinearLayout
+                    android:id="@+id/OtherCardInfo_NameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/addbusinesscard_radius_shape"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/OtherCardInfo_NameTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="姓名 : "
+                        android:textColor="#00c853"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/OtherCardInfo_Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Testing"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/OtherCardInfo_DescriptionLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/addbusinesscard_radius_shape"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/OtherCardInfo_DescriptionTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="描述 : "
+                        android:textColor="#00c853"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/OtherCardInfo_Description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Testing"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+
+            </LinearLayout>
+            
+        </LinearLayout>
+
+
+</RelativeLayout>

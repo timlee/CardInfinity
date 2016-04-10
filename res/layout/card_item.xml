@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:background="@drawable/main_radius_shape"
+    >
+
+    <LinearLayout
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable = "true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/cardHorizon"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/cardIconLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/addBusinessCard_Photo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardInformationLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/cardNameLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/cardName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="咖啡"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cardCompanyLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/cardCompany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一場失敗的愛情，像個笑話"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#212121"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="#eeeeee" />
+    </LinearLayout>
+
+</RelativeLayout>

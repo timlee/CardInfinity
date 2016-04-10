@@ -1,0 +1,437 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cardinfinity.CardInfoActivity" >
+
+    <ScrollView
+        android:id="@+id/CardInfo_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/CardInfo_MainContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:id="@+id/CardInfo_CardImageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/addbusinesscard_radius_shape"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/CardInfo_CardImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/man" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CardInfo_NameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/addbusinesscard_radius_shape"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/CardInfo_NameTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="姓名 : "
+                    android:textColor="#00c853"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/CardInfo_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Testing"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CardInfo_EmailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/addbusinesscard_radius_shape"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/CardInfo_EmailTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="E-Mail"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#00c853"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/CardInfo_EmailContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/CardInfo_EmailPersonLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp" >
+
+                        <TextView
+                            android:id="@+id/CardInfo_EmailPerson"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="lsc830621@gmail.com"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CardInfo_PhoneLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/addbusinesscard_radius_shape"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/CardInfo_PhoneTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="電話"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#00c853"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/CardInfo_PhoneContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/CardInfo_TelLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp" >
+
+                        <TextView
+                            android:id="@+id/CardInfo_TelTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="住家 : "
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/CardInfo_Tel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="03-3010056"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right" >
+
+                            <ImageView
+                                android:id="@+id/CardInfo_TelImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/callphone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/CardInfo_MobileLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp" >
+
+                        <TextView
+                            android:id="@+id/CardInfo_MobileTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="行動 : "
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/CardInfo_Mobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0928431981"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right" >
+
+                            <ImageView
+                                android:id="@+id/CardInfo_MobileImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/callphone" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/CardInfo_FaxLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp" >
+
+                        <TextView
+                            android:id="@+id/CardInfo_FaxTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="傳真 : "
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/CardInfo_Fax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0928431981"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right" >
+
+                         
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CardInfo_CompanyLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/addbusinesscard_radius_shape"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/CardInfo_CompanyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="公司"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#00c853"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/CardInfo_CompanyContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/CardInfo_CompanyNameLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp" >
+                        <TextView
+                            android:id="@+id/CardInfo_CompanyDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="公司 : "
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/CardInfo_Company"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="國立高雄師範大學軟體工程學系"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    </LinearLayout>
+                    
+                    
+                    <LinearLayout
+                        android:id="@+id/CardInfo_CompanyDepartmentLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp" >
+                        <TextView
+                            android:id="@+id/CardInfo_DepartmentDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="部門 : "
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/CardInfo_Department"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="文廷實驗室"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/CardInfo_JobLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp" >
+
+                        <TextView
+                            android:id="@+id/CardInfo_JobTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="職位 : "
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/CardInfo_Job"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="專題學生"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/CardInfo_AddressLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/addbusinesscard_radius_shape"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/CardInfo_AddressTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="地址"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#00c853"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/CardInfo_AddressContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/CardInfo_AddressNameLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp" >
+
+                        <TextView
+                            android:id="@+id/CardInfo_Address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="桃園市寶慶路388號11樓之2"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CardInfo_URLLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/addbusinesscard_radius_shape"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/CardInfo_URLTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="個人網站"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#00c853"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/CardInfo_URLContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp" >
+
+                        <TextView
+                            android:id="@+id/CardInfo_URL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="www.nknu.edu.tw"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right" >
+
+                            <ImageView
+                                android:id="@+id/CardInfo_WebImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/web" />
+                        </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
